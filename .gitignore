@@ -1,0 +1,32 @@
+# Publish only explicitly allowed source and documentation files.
+# Paid inputs and any results derived from them stay local.
+*
+!*/
+!/.gitignore
+!/AGENTS.md
+!/README.md
+!/LICENSE
+!/LICENSE.md
+!/requirements.txt
+!/pyproject.toml
+!/*.py
+!/src/**/*.py
+!/scripts/**/*.py
+!/tests/**/*.py
+!/docs/**/*.md
+
+# Never re-include files beneath these local-only directories.
+/data/
+/outputs/
+/reports/
+/notebooks/
+/private/
+/.local/
+/.venv/
+/venv/
+**/__pycache__/
+**/.pytest_cache/
+**/.ipynb_checkpoints/
+.DS_Store
+.env
+.env.*
