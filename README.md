@@ -189,7 +189,7 @@ These checks establish implementation behavior on tested cases, not profitabilit
 |---|---|
 | Baseline and five stacking types | Implemented; synthetic correctness checks included |
 | Historical lineup score comparison | Local timing-screened pilot completed for runnable configurations; full six-way comparison remains blocked |
-| Historical contest ranks and returns | Not evaluated; required complete fields and settled-score validation are missing |
+| Historical contest ranks and returns | Preliminary local cash-cutoff and limited rank checks completed; exact portfolio returns remain blocked by incomplete standings, payout schedules, and settled-score coverage |
 | Provider forecasts versus our own minutes adjustment | Deferred |
 | Additional compatible stacking combinations | Deferred |
 
@@ -198,6 +198,8 @@ time-admissible history for the screened-pair types. It therefore does not estab
 a winning stacking strategy or profitability. Detailed timing audits, selected
 lineups, scores, and reproducibility scripts remain under the ignored
 `outputs/historical_comparison_*/` directories, with a local `REPORT.txt` summary.
+Follow-up contest checks have their own local report. Crossing a reported cash
+cutoff is a provisional score comparison, not a confirmed payout or positive return.
 Source records and detailed results are not published in this README.
 
 Later, add a concise tested-results summary here: evaluation dates and number of
