@@ -2,8 +2,10 @@
 
 Date: November 8, 2026
 
-Status: The forecast approach is agreed. The implementation details below are
-proposed; this document does not claim an implemented or validated backtest.
+Status: Initial design retained for research context. The baseline and five NBA
+stacking types were subsequently authorized and implemented; see README.md and
+../plans/2026-11-09-nba-stacking.md for current interfaces and scope. No validated
+historical backtest or profitability result is claimed.
 
 ## Intent and agreed approach
 
@@ -38,7 +40,9 @@ Public code and documentation must not reproduce those materials.
 - Generate additional lineups sequentially, constraining player overlap with
   every previous lineup. Keep entry count and overlap cap explicit configuration
   choices; do not claim they are tuned or optimal without evaluation.
-- Begin without hockey-style stacking or an unvalidated NBA correlation rule.
+- Original baseline proposal: begin without forced stacking. Subsequently, add
+  the five explicitly approved NBA configurations as experimental variants;
+  retain no-forced-stacking as the control. Hockey stacking is not transplanted.
 - Keep input validation, model construction, solving, and export in concise
   helper functions, connected by one main function.
 - Use stable player identifiers as text, explicit missing values, and timezone-
