@@ -188,10 +188,17 @@ These checks establish implementation behavior on tested cases, not profitabilit
 | Research stage | Status |
 |---|---|
 | Baseline and five stacking types | Implemented; synthetic correctness checks included |
-| Historical lineup score/rank comparison | Not run |
-| Historical contest-return comparison | Not run |
+| Historical lineup score comparison | Local timing-screened pilot completed for runnable configurations; full six-way comparison remains blocked |
+| Historical contest ranks and returns | Not evaluated; required complete fields and settled-score validation are missing |
 | Provider forecasts versus our own minutes adjustment | Deferred |
 | Additional compatible stacking combinations | Deferred |
+
+The local historical pilot found limited pre-lock forecast coverage and too little
+time-admissible history for the screened-pair types. It therefore does not establish
+a winning stacking strategy or profitability. Detailed timing audits, selected
+lineups, scores, and reproducibility scripts remain under the ignored
+`outputs/historical_comparison_*/` directories, with a local `REPORT.txt` summary.
+Source records and detailed results are not published in this README.
 
 Later, add a concise tested-results summary here: evaluation dates and number of
 slates, rule/scoring version, forecast cutoff/provenance, fixed entry count and
